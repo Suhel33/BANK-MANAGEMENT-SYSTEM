@@ -6,7 +6,7 @@ public class BankApp {
         
         Scanner sc = new Scanner(System.in);
         ArrayList<Account> list = new ArrayList<>();
-        list.add(new Account("Aashish", "Suhel", "Pakwara", 80760912, 78569823, 8976, 1200));
+        list.add(new Account("Aashish Saini", "Suhel Khan", "Pakwara", 80760912, 78569823, 8976, 1200));
         list.add(new Account("Arpan", "Krish", "Amroha", 97763932, 98560845, 7680, 2100));
         list.add(new Account("Suresh", "Deepak", "Noida", 84790519, 83449087, 3456, 9800));
         list.add(new Account("Bhumi", "Bhupendra", "Chandosi", 79067890, 96447290, 5926, 12780));
@@ -32,11 +32,12 @@ public class BankApp {
                 case 1:
                     System.out.println("********* Account Open ********");
                     System.out.print("Enter Holder Name : ");
-                    n = sc.next();
+                    sc.nextLine();
+                    n = sc.nextLine();
                     System.out.print("Enter Father Name : ");
-                    fn = sc.next();
+                    fn = sc.nextLine();
                     System.out.print("Enter Address : ");
-                    add = sc.next();
+                    add = sc.nextLine();
                     System.out.print("Enter Phone Number : ");
                     ph = sc.nextInt();
                     System.out.print("Enter Aadhar Number : ");
